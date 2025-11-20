@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog | David Torres</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../Estilos/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container navbar">
+    <div class="brand">
+      <div class="brand-avatar">
+        <img src="../img/perfil.jpg" alt="Foto de perfil de David Torres">
+      </div>
+      <div class="brand-text">
+        <span>David Torres</span>
+        <span>Bases de Datos · Soporte IT</span>
+      </div>
+    </div>
+
+    <button class="nav-toggle">☰</button>
+
+    <nav class="nav-links">
+      <a href="inicio.html">Inicio</a>
+      <a href="acerca-de.html">Acerca de</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-kicker">Reflexiones</div>
+        <h1 class="section-title">Blog profesional</h1>
+      </div>
+      <p class="section-description">
+        Espacio para compartir ideas sobre gestión documental, soporte IT, bases de datos y aprendizaje continuo
+        en tecnología.
+      </p>
+    </div>
+
+    <div class="blog-grid">
+      <article class="blog-post">
+        <div class="blog-meta">Gestión documental · 2025</div>
+        <h2 class="card-title">Claves para una gestión documental eficiente en pymes</h2>
+        <p class="card-body">
+          La información es uno de los activos más importantes de cualquier organización. En este artículo exploro
+          buenas prácticas para organizar actas, recibos y archivos digitales, reducir pérdidas de información y
+          mejorar la trazabilidad de documentos.
+        </p>
+      </article>
+
+      <article class="blog-post">
+        <div class="blog-meta">Soporte IT · 2025</div>
+        <h2 class="card-title">Cómo un buen soporte interno mejora la experiencia del usuario</h2>
+        <p class="card-body">
+          Desde la mesa de ayuda se puede marcar una gran diferencia en el día a día de los colaboradores.
+          Reviso estrategias para atender tickets, priorizar incidencias y documentar soluciones de forma que
+          el conocimiento se reutilice.
+        </p>
+      </article>
+
+      <article class="blog-post">
+        <div class="blog-meta">Bases de datos · 2024</div>
+        <h2 class="card-title">Buenas prácticas básicas en SQL para entornos corporativos</h2>
+        <p class="card-body">
+          Un uso adecuado de SQL permite consultas más rápidas, datos más confiables y menos errores en producción.
+          Aquí comento prácticas simples que ayudan a mantener esquemas claros y facilitar el mantenimiento.
+        </p>
+      </article>
+
+      <article class="blog-post">
+        <div class="blog-meta">Aprendizaje · 2024</div>
+        <h2 class="card-title">Combinar estudio formal y proyectos personales en tecnología</h2>
+        <p class="card-body">
+          Integrar lo aprendido en la universidad con proyectos reales, freelance o académicos, acelera el
+          desarrollo profesional y permite construir un portafolio sólido para futuros empleadores.
+        </p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2025 David Santiago Torres Fonseca</span>
+    <div class="footer-links">
+      <a href="inicio.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  }
+</script>
+</body>
+</html>

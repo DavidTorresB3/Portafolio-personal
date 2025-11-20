@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>David Torres | Portafolio Profesional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../Estilos/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container navbar">
+    <div class="brand">
+      <div class="brand-avatar">
+        <!-- Reemplaza con tu foto -->
+        <img src="../img/perfil.jpg" alt="Foto de perfil de David Torres">
+      </div>
+      <div class="brand-text">
+        <span>David Torres</span>
+        <span>Técnico en Bases de Datos · Soporte IT</span>
+      </div>
+    </div>
+
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      ☰
+    </button>
+
+    <nav class="nav-links">
+      <a href="inicio.html" class="active">Inicio</a>
+      <a href="acerca-de.html">Acerca de</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span>Disponible para oportunidades en TI y Bases de Datos</span>
+      </div>
+
+      <h1>
+        Hola, soy <span>David Santiago Torres Fonseca</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        <span class="hero-highlight">Técnico profesional en sistemas de bases de datos</span> y estudiante de
+        Ingeniería de Software en Bogotá, con experiencia en soporte IT, gestión documental y mantenimiento de equipos.
+      </p>
+
+      <div class="hero-actions">
+        <a href="proyectos.html" class="btn btn-primary">Ver proyectos destacados</a>
+        <a href="contacto.html" class="btn btn-outline">Contactar</a>
+      </div>
+
+      <section class="section" aria-label="Resumen profesional">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Resumen</div>
+            <h2 class="section-title">Perfil en una mirada</h2>
+          </div>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3 class="card-title">Soporte IT & Mesa de Ayuda</h3>
+            <p class="card-body">
+              Experiencia atendiendo usuarios internos, diagnóstico de equipos, configuración de software y
+              documentación de incidentes en entornos corporativos.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Bases de datos & SQL</h3>
+            <p class="card-body">
+              Formación técnica en operación y mantenimiento de bases de datos (MySQL, SQL Server) y certificaciones
+              en programación con SQL y Java.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Gestión documental</h3>
+            <p class="card-body">
+              Manejo de información física y digital: digitación, foliación, escaneo, archivo y actualización de datos
+              en sistemas internos.
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <aside class="hero-card" aria-label="Resumen de perfil">
+      <div class="hero-card-header">
+        <div class="hero-card-avatar">
+          <img src="../img/perfil.jpg" alt="Foto de David Torres">
+        </div>
+        <div>
+          <div class="hero-card-title">David Torres</div>
+          <div class="hero-card-role">
+            Técnico en Bases de Datos · Estudiante de Ingeniería de Software
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card-body">
+        Comprometido con la mejora continua y la precisión en el manejo de datos, combino
+        <em>soporte técnico</em>, <em>gestión documental</em> y bases de datos para aportar valor
+        en entornos tecnológicos y administrativos.
+      </div>
+
+      <div class="hero-card-footer">
+        <div class="hero-card-stat">
+          <span>Ubicación</span>
+          <span>Bogotá D.C. · Colombia</span>
+        </div>
+        <div class="hero-card-stat">
+          <span>Teléfono</span>
+          <span>+57 305 270 2985</span>
+        </div>
+        <div class="hero-card-stat">
+          <span>Formación</span>
+          <span>Ing. Software (en curso)</span>
+        </div>
+        <div class="hero-card-stat">
+          <span>Especialidad</span>
+          <span>Bases de Datos · Soporte IT</span>
+        </div>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2025 David Santiago Torres Fonseca · Portafolio profesional</span>
+    <div class="footer-links">
+      <a href="acerca-de.html">Acerca de</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Pequeño script solo para alternar el menú móvil
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  }
+</script>
+</body>
+</html>

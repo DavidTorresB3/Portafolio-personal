@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyectos destacados | David Torres</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../Estilos/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container navbar">
+    <div class="brand">
+      <div class="brand-avatar">
+        <img src="../img/perfil.jpg" alt="Foto de perfil de David Torres">
+      </div>
+      <div class="brand-text">
+        <span>David Torres</span>
+        <span>Bases de Datos · Soporte IT</span>
+      </div>
+    </div>
+
+    <button class="nav-toggle">☰</button>
+
+    <nav class="nav-links">
+      <a href="inicio.html">Inicio</a>
+      <a href="acerca-de.html">Acerca de</a>
+      <a href="proyectos.html" class="active">Proyectos</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-kicker">Portafolio</div>
+        <h1 class="section-title">Proyectos destacados</h1>
+      </div>
+      <p class="section-description">
+        Selección de proyectos académicos, personales y de soporte IT que reflejan mis habilidades en bases de datos,
+        soporte técnico y automatización de procesos.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-media"></div>
+        <div class="project-body">
+          <h2 class="card-title">Sistema de Gestión Documental para PyME</h2>
+          <p class="card-body">
+            Diseño de un flujo de gestión documental para una pequeña empresa, incluyendo estructura de carpetas,
+            nomenclatura estandarizada, control de versiones y respaldo de información.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Gestión documental</span>
+            <span class="tag">Bases de datos</span>
+            <span class="tag">Automatización</span>
+          </div>
+          <div class="project-meta">
+            <span>Proyecto aplicado</span>
+            <span>2023</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media"></div>
+        <div class="project-body">
+          <h2 class="card-title">Panel de incidencias de Mesa de Ayuda</h2>
+          <p class="card-body">
+            Configuración y documentación de un flujo de tickets para solicitudes de soporte IT, con clasificación
+            de incidentes, priorización y seguimiento para optimizar tiempos de respuesta.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Soporte IT</span>
+            <span class="tag">Mesa de ayuda</span>
+            <span class="tag">ITSM</span>
+          </div>
+          <div class="project-meta">
+            <span>Práctica profesional</span>
+            <span>2024</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media"></div>
+        <div class="project-body">
+          <h2 class="card-title">Laboratorio de Bases de Datos con SQL</h2>
+          <p class="card-body">
+            Creación de esquemas relacionales, consultas SQL intermedias, vistas y procedimientos almacenados
+            para un entorno académico de práctica con MySQL y SQL Server.
+          </p>
+          <div class="project-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">SQL Server</span>
+          </div>
+          <div class="project-meta">
+            <span>Proyecto académico</span>
+            <span>2024</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-kicker">Enfoque</div>
+        <h2 class="section-title">Cómo trabajo</h2>
+      </div>
+    </div>
+
+    <div class="cards-grid">
+      <article class="card">
+        <h3 class="card-title">Diagnóstico preciso</h3>
+        <p class="card-body">
+          Antes de proponer soluciones, realizo un diagnóstico cuidadoso del contexto, sistemas involucrados y
+          restricciones del entorno, asegurando propuestas realistas y sostenibles.
+        </p>
+      </article>
+      <article class="card">
+        <h3 class="card-title">Documentación clara</h3>
+        <p class="card-body">
+          Documentar procedimientos, cambios y configuraciones garantiza continuidad y facilita la colaboración
+          entre áreas técnicas y administrativas.
+        </p>
+      </article>
+      <article class="card">
+        <h3 class="card-title">Orientación al usuario</h3>
+        <p class="card-body">
+          La tecnología debe ser una aliada del usuario final. Me enfoco en brindar soporte cercano, empático y
+          claro, reduciendo fricciones y mejorando la experiencia interna.
+        </p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2025 David Santiago Torres Fonseca</span>
+    <div class="footer-links">
+      <a href="inicio.html">Inicio</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  }
+</script>
+</body>
+</html>

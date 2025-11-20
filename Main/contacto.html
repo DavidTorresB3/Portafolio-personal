@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto | David Torres</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../Estilos/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container navbar">
+    <div class="brand">
+      <div class="brand-avatar">
+        <img src="../img/perfil.jpg" alt="Foto de perfil de David Torres">
+      </div>
+      <div class="brand-text">
+        <span>David Torres</span>
+        <span>Bases de Datos · Soporte IT</span>
+      </div>
+    </div>
+
+    <button class="nav-toggle">☰</button>
+
+    <nav class="nav-links">
+      <a href="inicio.html">Inicio</a>
+      <a href="acerca-de.html">Acerca de</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-kicker">Contacto</div>
+        <h1 class="section-title">Conectemos</h1>
+      </div>
+      <p class="section-description">
+        Si tu organización necesita fortalecer su soporte IT, gestión documental o administración de bases de datos,
+        estaré encantado de conversar.
+      </p>
+    </div>
+
+    <div class="contact-layout">
+      <aside class="contact-card">
+        <h2>Información de contacto</h2>
+        <ul class="contact-info-list">
+          <li>
+            <span class="contact-info-label">Teléfono:</span>
+            <span>+57 305 270 2985</span>
+          </li>
+          <li>
+            <span class="contact-info-label">Correo:</span>
+            <span>Dsantyagot21@gmail.com</span>
+          </li>
+          <li>
+            <span class="contact-info-label">Ciudad:</span>
+            <span>Bogotá D.C. – Colombia</span>
+          </li>
+          <li>
+            <span class="contact-info-label">Idiomas:</span>
+            <span>Español (nativo), Inglés (básico – en fortalecimiento)</span>
+          </li>
+        </ul>
+
+        <div class="section" style="margin-top:1.2rem;">
+          <div class="section-kicker">Intereses</div>
+          <p class="card-body">
+            Tecnología aplicada a la gestión documental, automatización de procesos administrativos, desarrollo de
+            habilidades digitales y técnicas, inteligencia artificial y análisis de datos.
+          </p>
+        </div>
+      </aside>
+
+      <section>
+        <h2>Envíame un mensaje</h2>
+        <form class="form" action="https://formspree.io/f/movrnwgd" method="POST">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez">
+          </div>
+
+          <div class="form-group">
+            <label for="correo">Correo corporativo</label>
+            <input class="form-control" type="email" id="correo" name="email" placeholder="empresa@dominio.com">
+          </div>
+
+          <div class="form-group">
+            <label for="empresa">Empresa / Organización</label>
+            <input class="form-control" type="text" id="empresa" name="empresa" placeholder="Nombre de la empresa">
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="form-textarea" id="mensaje" name="message" placeholder="Cuéntame brevemente qué necesitas…"></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">
+            Enviar mensaje
+          </button>
+        </form>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2025 David Santiago Torres Fonseca</span>
+    <div class="footer-links">
+      <a href="inicio.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  }
+</script>
+</body>
+</html>
