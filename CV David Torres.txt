@@ -1,0 +1,114 @@
+HOJA DE VIDA – DAVID SANTIAGO TORRES FONSECA
+
+Técnico en Sistemas | Soporte IT | Desarrollador Web | Gestión Documental
+
+📍 Bogotá D.C., Colombia
+📞 305-270-2985
+📧 dsantyagot21@gmail.com
+
+ENLACES DIGITALES
+
+Portafolio Web: https://davidtorresb3.github.io/Portafolio-personal/Main/inicio.html
+GitHub: https://github.com/DavidTorresB3/
+LinkedIn: https://www.linkedin.com/in/tecnico-david-torres/
+
+PERFIL PROFESIONAL
+
+Técnico Profesional en Sistemas de Bases de Datos con experiencia en soporte IT, desarrollo web, gestión documental y administración de información. He trabajado tanto en empresas del sector tecnológico como en proyectos administrativos, creando soluciones digitales que optimizan procesos y mejoran la productividad.
+
+He desarrollado plataformas web internas, sistemas de registro de producción, instructivos técnicos, automatizaciones y sitios web funcionales para pequeñas empresas. Actualmente curso Ingeniería de Software, fortaleciendo mis habilidades en programación con Python, Java, JavaScript, React, HTML, CSS y SQL.
+
+Busco oportunidades como Técnico en Sistemas, Mesa de Ayuda IT, Auxiliar TI o Desarrollador Web Junior, alineadas con mi crecimiento profesional en el sector tecnológico.
+
+EXPERIENCIA PROFESIONAL
+
+Filex S.A.S – Auxiliar Documental (Proyecto ICBF)
+📍 Bogotá D.C.
+🗓 Septiembre 2024 – Noviembre 2024
+
+Funciones Principales:
+- Organización, clasificación y foliación de expedientes de acuerdo con lineamientos del ICBF
+- Elaboración, ajuste y actualización de inventarios documentales físicos y digitales
+- Indexación, carga y verificación de información en plataformas internas
+- Digitalización con control de calidad, revisión estructural y auditoría documental
+
+Mejoras Implementadas:
+- Desarrollo de instructivos y guías estandarizadas
+- Creación de página web interna para descarga de guías
+- Implementación de sistema web de registro de producción diaria
+- Desarrollo de aplicación de escritorio para envío masivo de correos
+
+Jazzplat – Practicante Mesa de Ayuda IT
+📍 Bogotá D.C.
+🗓 Septiembre 2024 – Marzo 2025
+
+- Atención y soporte técnico a usuarios internos
+- Solución de incidentes de hardware y software
+- Configuración de sistemas operativos, mantenimiento preventivo/correctivo
+- Instalación, actualización y soporte en aplicativos corporativos
+- Registro detallado de incidentes mediante plataforma de tickets
+- Soporte remoto utilizando herramientas como AnyDesk, CMD y utilidades del sistema
+
+Técnico en Reparación de Equipos | Desarrollador Web Independiente (Freelance)
+📍 Bogotá D.C.
+🗓 2022 – Actualidad
+
+- Reparación, mantenimiento, optimización y actualización de equipos de cómputo
+- Asesoría en mejoras de hardware, software y rendimiento de sistemas
+- Desarrollo de sitios web completos para pymes
+- Creación de landing pages, dashboards internos, formularios, automatizaciones
+- Gestión de bases de datos, despliegue de proyectos web y soporte continuo
+
+Empresa Bolirranas La Colombiana – Encargado Administrativo y Vendedor
+📍 Bogotá D.C.
+🗓 Enero 2022 – Diciembre 2022
+
+- Atención al cliente, asesoría personalizada y manejo de ventas
+- Gestión completa del punto de venta
+- Control y seguimiento del inventario
+- Manejo de flujo de caja y control de ganancias diarias
+
+FORMACIÓN ACADÉMICA
+
+Ingeniería de Software (En curso – 6º semestre)
+Fundación Universitaria Compensar
+2023 – Actualidad
+
+Técnico Profesional en Operación y Mantenimiento en Bases de Datos
+Fundación Universitaria Compensar
+Enero 2023 – Diciembre 2024
+
+Certificaciones – Oracle Academy (2024)
+- Database Programming with SQL (100 h)
+- Java Foundations (90 h)
+
+HABILIDADES
+
+Técnicas:
+- Soporte IT y atención a usuarios
+- Mantenimiento y reparación de equipos
+- Gestión documental digital
+- Bases de datos (MySQL, SQL Server)
+- Virtualización (VirtualBox)
+- Git y GitHub
+- Configuración de sistemas operativos (Windows, Windows Server, Linux)
+
+Lenguajes de Programación:
+- Python, Java, HTML, CSS, JavaScript, React, SQL/MySQL
+
+Programas Informáticos:
+- Excel, Word, PowerPoint, Access, OneNote, Forms, Google Drive
+- MySQL Workbench, SQL Server Management Studio
+- CMD, AnyDesk
+
+IDIOMAS
+
+Inglés: Básico (en proceso de mejora)
+
+INTERESES
+
+- Desarrollo web y soluciones digitales
+- Automatización de procesos
+- Gestión documental digital
+- Inteligencia artificial y análisis de datos
+- Formación continua en tecnologías

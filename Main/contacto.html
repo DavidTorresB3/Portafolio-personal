@@ -24,8 +24,8 @@
     <nav class="nav-links">
       <a href="inicio.html">Inicio</a>
       <a href="acerca-de.html">Acerca de</a>
-      <a href="proyectos.html">Proyectos</a>
-      <a href="blog.html">Blog</a>
+      <!-- En desarrollo: <a href="proyectos.html">Proyectos</a> -->
+      <!-- En desarrollo: <a href="blog.html">Blog</a> -->
       <a href="contacto.html" class="active">Contacto</a>
     </nav>
   </div>
@@ -49,15 +49,15 @@
         <h2>Información de contacto</h2>
         <ul class="contact-info-list">
           <li>
-            <span class="contact-info-label">Teléfono:</span>
+            <span class="contact-info-label" onclick="trackCVStep(1)" style="cursor: pointer; transition: all 0.2s ease;">📞 Teléfono:</span>
             <span>+57 305 270 2985</span>
           </li>
           <li>
-            <span class="contact-info-label">Correo:</span>
+            <span class="contact-info-label" onclick="trackCVStep(2)" style="cursor: pointer; transition: all 0.2s ease;">📧 Correo:</span>
             <span>dsantyagot21@gmail.com</span>
           </li>
           <li>
-            <span class="contact-info-label">Ciudad:</span>
+            <span class="contact-info-label" onclick="trackCVStep(3)" style="cursor: pointer; transition: all 0.2s ease;">📍 Ciudad:</span>
             <span>Bogotá D.C. – Colombia</span>
           </li>
           <li>
@@ -79,6 +79,11 @@
               <a href="https://davidtorresb3.github.io/Portafolio-personal/Main/inicio.html" target="_blank">Portafolio Web</a>
             </li>
           </ul>
+        </div>
+
+        <!-- Botón oculto de descarga de CV - Se activa al completar la secuencia de 4 pasos -->
+        <div id="cv-download-container" style="margin-top: 1.2rem; display: none;">
+          <a id="cv-download-btn" href="../CV David Torres.txt" download class="btn btn-accent" style="font-size: 0.85rem; padding: 0.5rem 1rem; background: var(--color-accent); color: var(--color-bg); border: none; cursor: pointer; text-decoration: none; border-radius: var(--radius-lg); display: inline-block; text-align: center;">🔑 Descargar CV</a>
         </div>
 
         <div class="section" style="margin-top:1.2rem;">
@@ -127,7 +132,8 @@
     <span>© 2025 David Santiago Torres Fonseca</span>
     <div class="footer-links">
       <a href="inicio.html">Inicio</a>
-      <a href="proyectos.html">Proyectos</a>
+      <a href="acerca-de.html">Acerca de</a>
+      <a href="contacto.html">Contacto</a>
     </div>
   </div>
 </footer>
@@ -140,6 +146,69 @@
       navLinks.classList.toggle('open');
     });
   }
+
+  // Sistema de descarga oculta de CV
+  let cvSteps = [];
+  const requiredSequence = [1, 2, 3]; // 📞 Teléfono → 📧 Correo → 📍 Ciudad
+  
+  function trackCVStep(step) {
+    cvSteps.push(step);
+    console.log('Paso registrado:', step);
+    
+    // Mantener solo los últimos 3 pasos
+    if (cvSteps.length > 3) {
+      cvSteps.shift();
+    }
+    
+    // Verificar si se completó la secuencia
+    if (cvSteps.length === 3 && JSON.stringify(cvSteps) === JSON.stringify(requiredSequence)) {
+      activateCVDownload();
+    }
+  }
+  
+  function activateCVDownload() {
+    const container = document.getElementById('cv-download-container');
+    const btn = document.getElementById('cv-download-btn');
+    
+    if (container && btn) {
+      container.style.display = 'block';
+      btn.style.animation = 'fadeInButton 0.4s ease';
+      
+      // Mensaje sutil en la consola para el desarrollador
+      console.log('%c✅ CV desbloqueado', 'color: #a8e6cf; font-weight: bold; font-size: 14px;');
+      
+      // Auto-ocultar después de 10 minutos si no se descarga
+      setTimeout(() => {
+        cvSteps = [];
+        container.style.display = 'none';
+        console.log('Sesión de descarga expirada');
+      }, 600000); // 10 minutos
+    }
+  }
 </script>
+
+<style>
+  @keyframes fadeInButton {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  #cv-download-btn {
+    background: var(--color-accent) !important;
+    color: var(--color-bg) !important;
+    transition: all 0.3s ease;
+  }
+  
+  #cv-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(168, 230, 207, 0.3);
+  }
+</style>
 </body>
 </html>

@@ -1,0 +1,85 @@
+═══════════════════════════════════════════════════════════════
+  MECANISMO OCULTO - DESCARGA DE CV
+  PORTAFOLIO PERSONAL DAVID TORRES
+═══════════════════════════════════════════════════════════════
+
+PROPÓSITO:
+Permitir que solo el propietario del sitio (David Torres) recuerde 
+y ejecute la secuencia para desbloquear la descarga del CV desde 
+la página de Contacto, sin exponerlo públicamente.
+
+═══════════════════════════════════════════════════════════════
+  SECUENCIA DE ACTIVACIÓN (4 PASOS)
+═══════════════════════════════════════════════════════════════
+
+Para desbloquear el botón de descarga del CV, sigue estos pasos 
+EN ORDEN en la página de Contacto:
+
+PASO 1: Haz clic en "📞 Teléfono"
+        (En la sección "Información de contacto")
+
+PASO 2: Haz clic en "📧 Correo"
+        (Justo debajo del teléfono)
+
+PASO 3: Haz clic en "📍 Ciudad"
+        (Justo debajo del correo)
+
+RESULTADO: El botón "🔑 Descargar CV" aparecerá de forma sutil 
+           con una animación suave debajo de los Enlaces Digitales.
+
+═══════════════════════════════════════════════════════════════
+  DETALLES TÉCNICOS
+═══════════════════════════════════════════════════════════════
+
+Ubicación del código:
+→ Archivo: /Main/contacto.html
+→ Función JavaScript: trackCVStep() y activateCVDownload()
+→ Elemento HTML: cv-download-container
+
+Funcionamiento:
+✓ Los clics se registran en un array que mantiene los últimos 3 pasos
+✓ Al completarse la secuencia correcta, se activa la visibilidad del botón
+✓ El botón tiene un ícono 🔑 y texto "Descargar CV"
+✓ El botón descarga el archivo: /CV David Torres.txt
+✓ La sesión expira automáticamente después de 10 minutos de inactividad
+
+Características de seguridad/privacidad:
+✓ El botón está oculto por defecto (display: none)
+✓ Solo aparece cuando se completa la secuencia exacta
+✓ No hay pistas visibles en la página sobre cómo activarlo
+✓ Cada clic erróneo reinicia el contador
+✓ Se registra en la consola del navegador (solo para debugging)
+
+═══════════════════════════════════════════════════════════════
+  CÓMO VERIFICAR QUE FUNCIONA
+═══════════════════════════════════════════════════════════════
+
+1. Abre la página: /Main/contacto.html
+2. Busca la sección "Información de contacto" en el lado izquierdo
+3. Haz clic en los ícones en este orden: 📞 → 📧 → 📍
+4. Observa cómo aparece el botón con ícono 🔑 bajo "Enlaces Digitales"
+5. Haz clic en el botón para descargar el CV
+
+═══════════════════════════════════════════════════════════════
+  NOTAS IMPORTANTES
+═══════════════════════════════════════════════════════════════
+
+• Archivo de CV ubicado en: /CV David Torres.txt
+• El mecanismo NO interfiere con la experiencia de usuarios normales
+• Es invisible para quienes no conozcan la secuencia
+• Compatible con todos los navegadores modernos
+• El botón tiene estilos coherentes con el diseño del sitio
+• Sugerencia: Compartir esta instrucción SOLO con reclutadores/empresas
+
+═══════════════════════════════════════════════════════════════
+  FUTURAS MEJORAS (OPCIONAL)
+═══════════════════════════════════════════════════════════════
+
+Consideraciones para evolucionar el mecanismo:
+- Usar combinaciones de teclas (Ctrl+Shift+K, etc.)
+- Agregar un contador visual oculto
+- Implementar múltiples secuencias diferentes
+- Enviar CV por email automático al activar
+- Registrar quién accedió al CV (si es necesario)
+
+═══════════════════════════════════════════════════════════════
