@@ -592,6 +592,18 @@ main {
   margin-bottom: 0.4rem;
 }
 
+.contact-info-list li a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: var(--transition-base);
+  font-weight: 500;
+}
+
+.contact-info-list li a:hover {
+  color: var(--color-accent-soft);
+  text-decoration: underline;
+}
+
 .contact-info-label {
   font-weight: 600;
   color: var(--color-accent);
